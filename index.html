@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
     <title>Document</title>
 </head>
 <body>
-<div class="text-capitalize container flex flex-row justify-content-between">
-    <div class="w-50 flex-row justify-content-between">
+<header class="text-capitalize container flex flex-row justify-content-between w-100">
+    <div class="w-50 flex flex-row justify-content-between">
         <h1 style="color: #ff855f">bello</h1>
         <a class="text-decoration-none text-dark" href="#">life insurance</a>
         <a href="#" class="blue">why bello</a>
@@ -16,124 +18,121 @@
     </div>
     <div class="w-25 flex-row justify-content-evenly">
         <a href="#" class="text-decoration-none text-dark">login</a>
-        <button class="btn border-3 border-secondary p-1">GET MY FREE</button>
+        <button class="btn orange p-1">GET MY FREE</button>
     </div>
-</div>
-<div class="flex-row p-5 justify-content-evenly">
+</header>
+<div id="board" class="flex flex-row p-5 justify-content-evenly w-100">
     <div class="w-50">
         <h5>MEET BELLO</h5>
         <h2 class="text-capitalize">a new kind of <br> life insurance</h2>
         <p class="text-secondary">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit</p>
-        <button class="btn border-2 border-secondary">GET MY PRICE ---></button>
+        <button class="btn orange">GET MY PRICE ---></button>
     </div>
     <img src="./images/family.svg" class="w-25" alt="family">
 </div>
-<div class="flex-row justify-content-center">
-    <img src="./images/chart.png" class="w-25" alt="chart">
-    <div>
+<div id="chartboard" class="flex flex-row row justify-content-evenly bg-gray p-5 w-100">
+    <img src="./images/chart.png" class="col-4 m-auto" alt="chart">
+    <div class="col-4 m-auto">
         <h5>MANAGE YOUR FUTURE</h5>
         <h2>it's more affordable <br>
             than you think</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Rerum repellendus
             itaque amet, mollitia <br> placeat dicta, laborum voluptates.</p>
-        <a href="#" style="text-decoration: none;">GET MY PRICE ---></a>
+        <a href="#" class="text-decoration-none orange">GET MY PRICE ---></a>
     </div>
 </div>
-<div class="flex-row justify-content-center bg-secondary">
-    <div>
-        <h5>MANAGE YOUER FUTURE</h5>
+<div id="momyboard" class="flex flex-row row justify-content-evenly p-5 w-100">
+    <div class="col-4 m-auto">
+        <h5>MANAGE YOUR FUTURE</h5>
         <h2>We're here to help</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Rerum repellendus
             itaque amet, mollitia placeat.</p>
-        <a href="#" class="blue" style="text-decoration: none;">Get help---></a>
+        <a href="#" class="blue text-decoration-none">Get help---></a>
     </div>
-    <img src="./images/mom&girl.jpg" class="momyimage" alt="momy">
-    <!-- <div class="imagecaption">There's also human help<img src="./images/bye.png" class="captionicon" alt="bye"/></div> -->
+    <img src="./images/mom&girl.jpg" class="col-4" alt="momy">
 </div>
-<div class="safeboard">
+<div id="safeboard" class="flex flex-row flex-column align-items-center bg-gray p-5 w-100">
     <h5 class="boardhead">TOP-RATED TEAM LIFE KLSJCBLAK</h5>
     <h2 class="boardtitle">You're in safe hands</h2>
-    <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus, illum
+    <p class="boardboxcaption text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+        necessitatibus, illum
         fugit asperiores porro voluptas eveniet rem corrupti libero sunt <br> at perspiciatis accusamus veritatis Lorem
         ipsum dolor sit amet..</p>
-    <div class="cardbox">
-        <div class="card">
-            <img src="./images/mom.png" alt="momy" class="momy">
+    <div class="flex flex-row row justify-content-center">
+        <div class="flex flex-column align-items-center text-center bg-white m-3 col">
+            <img src="./images/mom.png" alt="momy" class="w-25">
             <h2 class="boardtitlecard">Expert guidance</h2>
-            <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="boardboxcaption text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
         </div>
-        <div class="card">
-            <img src="./images/mom.png" alt="momy" class="momy">
+        <div class="flex flex-column align-items-center text-center bg-white m-3 col">
+            <img src="./images/mom.png" alt="momy" class="w-25">
+            <h2 class="boardtitlecard ">Expert guidance</h2>
+            <p class="boardboxcaption text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></div>
+        <div class="flex flex-column align-items-center text-center bg-white m-3 col">
+            <img src="./images/mom.png" alt="momy" class="w-25">
             <h2 class="boardtitlecard">Expert guidance</h2>
-            <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></div>
-        <div class="card">
-            <img src="./images/mom.png" alt="momy" class="momy">
-            <h2 class="boardtitlecard">Expert guidance</h2>
-            <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="boardboxcaption text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <p>
         </div>
     </div>
 </div>
-<div class="blackboard">
+<div id="blackboard" class="flex flex-column bg-dark align-items-center p-2 text-center text-white w-100">
     <h5 class="boardhead">How It Work's</h5>
-    <h2 class="boardtitle" style="color: white;">affordable life insurance in minuts</h2>
+    <h2 class="boardtitle">affordable life insurance in minuts</h2>
     <p style="color: gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus, illum fugit
         <br> asperiores porro voluptas eveniet rem corrupti libero sunt</p>
-    <div class="cardbox">
-        <div class="card" style="background-color: transparent;">
+    <div class="flex flex-row row w-100" style="height: 250px">
+        <div class="col-3" style="background-color: transparent;">
             <h1 class="strocknum">1</h1>
             <h2 class="boardtitlecard" style="color: white;">Expert guidance</h2>
             <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <p>
         </div>
-        <div class="card" style="background-color: transparent;">
+        <div class="col-3" style="background-color: transparent;">
             <h1 class="strocknum">2</h1>
             <h2 class="boardtitlecard" style="color: white;">Expert guidance</h2>
             <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <p>
         </div>
-        <div class="card" style="background-color: transparent;">
+        <div class="col-3" style="background-color: transparent;">
             <h1 class="strocknum">3</h1>
             <h2 class="boardtitlecard" style="color: white;">Expert guidance</h2>
             <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <p>
         </div>
     </div>
-    <button class="btn orange" style="border: none">GET MY PRICE ---></button>
+    <button class="btn orange">GET MY PRICE ---></button>
 </div>
-<div class="momyboard2" style="background: #f5f5f5;">
-    <img src="./images/mom&girl.jpg" class="momyimage" alt="momy">
-    <div class="boardbox2">
-        <h5 class="boardhead">MANAGE YOUER FUTURE</h5>
+<div id="momyboard2" class="flex flex-row row justify-content-between bg-gray p-3 w-100">
+    <img src="./images/mom&girl.jpg" class="col-3" alt="momy">
+    <div class="col-3">
+        <h5 class="boardhead">MANAGE YOUR FUTURE</h5>
         <h2 class="boardtitle">We're here to help</h2>
         <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Rerum repellendus
             itaque amet, mollitia placeat.</p>
         <a href="#" class="blue" style="text-decoration: none;">Get help---></a>
     </div>
 </div>
-<div class="cardbox">
-    <div class="card2" style="background-color: CadetBlue;border: #f5f5f5 solid 3px;">
+<div id="cardboard" class="flex flex-row row justify-content-center p-3 w-100">
+    <div class="col h-25 text-center p-2" style="background-color: CadetBlue;border: #f5f5f5 solid 3px">
         <h1 class="boardhead" style="font-size: 30px;color: darkcyan;">3</h1>
         <h2 class="boardtitle" style="color: darkcyan;">Expert guidance</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
         <a href="#" class="blue" style="text-decoration: none;color: darkcyan;display: block;">Get help---></a>
-
     </div>
-    <div class="card2" style="background-color: CadetBlue;border: #f5f5f5 solid 3px;">
+    <div class="col h-25 text-center p-2" style="background-color: CadetBlue;border: #f5f5f5 solid 3px">
         <h1 class="boardhead" style="font-size: 30px;color: darkcyan;">3</h1>
         <h2 class="boardtitle" style="color: darkcyan;">Expert guidance</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
         <a href="#" class="blue" style="text-decoration: none;color: darkcyan;display: block;">Get help---></a>
-
     </div>
-    <div class="card2" style="background-color: CadetBlue;border: #f5f5f5 solid 3px;">
+    <div class="col h-25 text-center p-2" style="background-color: CadetBlue;border: #f5f5f5 solid 3px">
         <h1 class="boardhead" style="font-size: 30px;color: darkcyan;">3</h1>
         <h2 class="boardtitle" style="color: darkcyan;">Expert guidance</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
         <a href="#" class="blue" style="text-decoration: none;color: darkcyan;display: block;">Get help---></a>
-
     </div>
-    <div class="card2" style="background-color: CadetBlue;border: #f5f5f5 solid 3px;">
+    <div class="col h-25 text-center p-2" style="background-color: CadetBlue;border: #f5f5f5 solid 3px">
         <h1 class="boardhead" style="font-size: 30px;color: darkcyan;">3</h1>
         <h2 class="boardtitle" style="color: darkcyan;">Expert guidance</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -141,24 +140,28 @@
 
     </div>
 </div>
-<div class="startboard">
-    <img src="./images/rain.svg" class="rain" alt="rain">
+<div id="blueboard" class="flex flex-row align-items-center p-5 text-center w-100">
+    <img src="./images/rain.svg" class="w-25" alt="rain">
     <div>
         <h2 class="boardtitle">affordable life insurance in minuts</h2>
         <p class="boardboxcaption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus, illum
             fugit <br> asperiores porro voluptas eveniet rem corrupti libero sunt</p>
         <button class="btn orange" style="border: none;margin-top: 30px;">GET MY PRICE ---></button>
     </div>
-    <img src="./images/boy.png" class="boy" alt="boy">
+    <img src="./images/boy.png" class="w-25" alt="boy">
 </div>
-<div class="endboard">
-    <div>
+<div id="endboard" class="flex flex-row row justify-content-evenly align-items-center p-2 w-100"
+>
+    <div class="col-2">
         <h1 style="color: #ff855f">bello</h1>
         <p class="boardboxcaption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Vitae unde sequi
             maiores odio maxime quas, soluta vero, <br> a, ex modi</p>
-        <input type="text" class="emailinput" placeholder="your email example">
-        <button class="btn emailsubmit" name="submit">Go --></button>
-        <div class="sampleiconbox">
+        <label>
+            <input type="text" class="p-2" style="border: 3px lightgray solid;border-right: none"
+                   placeholder="your email example">
+            <button class="btn submit p-2" name="submit">Go --></button>
+        </label>
+        <div class="w-100">
             <img src="./images/bye.png" class="sampleicon" alt="sampleicon">
             <img src="./images/bye.png" class="sampleicon" alt="sampleicon">
             <img src="./images/bye.png" class="sampleicon" alt="sampleicon">
@@ -166,7 +169,8 @@
             <img src="./images/bye.png" class="sampleicon" alt="sampleicon">
         </div>
     </div>
-    <table class="table">
+    <table class="col-3">
+        <tbody>
         <tr>
             <th>resources</th>
             <th>magazine</th>
@@ -195,11 +199,12 @@
         <tr>
             <td>rea</td>
         </tr>
+        </tbody>
     </table>
 </div>
-<footer>
+<footer class="flex flex-row justify-content-evenly p-2 w-100">
     <p class="boardboxcaption">©2020 Lorem ipsum dolor sit amet consectetur.</p>
-    <button class="footerbtn" name="submit">GET MY PRICE</button>
+    <button class="btn" name="submit">GET MY PRICE</button>
 </footer>
 </body>
 </html>

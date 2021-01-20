@@ -1965,6 +1965,7 @@ progress {
     --bs-table-striped-color: #000;
     --bs-table-active-bg: #dfc2c4;
     --bs-table-active-color: #000;
+    
     --bs-table-hover-bg: #e5c7ca;
     --bs-table-hover-color: #000;
     color: #000;
@@ -6794,22 +6795,18 @@ textarea.form-control-lg {
 }
 
 .flex-row {
-    display: flex !important;
     flex-direction: row !important
 }
 
 .flex-column {
-    display: flex !important;
     flex-direction: column !important
 }
 
 .flex-row-reverse {
-    display: flex !important;
     flex-direction: row-reverse !important
 }
 
 .flex-column-reverse {
-    display: flex !important;
     flex-direction: column-reverse !important
 }
 
